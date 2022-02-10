@@ -1,0 +1,183 @@
+@font-face {
+  font-family: MetalMania-Regular;
+  src: url(./MetalMania-Regular.ttf);
+}
+
+@font-face {
+  font-family: Porter-Sand-Block;
+  src: url(./porter-sans-inline-block.ttf);
+}
+
+@font-face {
+  font-family: Molle-Italic;
+  src: url(./Molle-Italic.ttf);
+}
+
+@font-face {
+  font-family: novamono;
+  src: url(./novamono.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+.content {
+  background: #223c3c;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  text-align: center;
+  font-family: MetalMania-Regular, monospace;
+}
+
+.LeftBarDiv {
+  background: #32999f;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.h1Style {
+  border-bottom: 2px solid white;
+  margin-top: 10px;
+}
+
+.food {
+  font-family: MetalMania-Regular, monospace;
+  font-size: 35px;
+  text-decoration: none;
+}
+
+/**MAIN SITE*/
+
+.mainSite {
+  width: 70%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Title {
+  text-align: center;
+  font-size: 60px;
+  font-family: Porter-Sand-Block, monospace;
+  background: #32999f;
+  border-radius: 68px;
+  margin: 10px 220px;
+  padding: 5px;
+}
+
+.recomended {
+  text-align: center;
+  font-size: 60px;
+  font-family: Molle-Italic, monospace;
+  background: #32999f;
+  border-radius: 68px;
+  margin: 0px 50px;
+  margin-top: 40px;
+  padding: 5px;
+}
+
+.foodSquare {
+  background: #32999f;
+  width: 868;
+  height: 671px;
+  margin: 50px;
+  border-radius: 68px;
+  text-align: center;
+}
+
+.foodName {
+  font-family: MetalMania-Regular, monospace;
+  font-size: 60px;
+}
+
+.foodPictureSquare {
+  width: 577px;
+  height: 349px;
+  margin: 0px 135px;
+}
+
+.foodPicture {
+  background: url("./download.jpeg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.pizza {
+  background: url("./pizza.jpg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.chips {
+  background: url("./chips.jpg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.carbonara {
+  background: url("./carbonara.jpg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.foodDescription {
+  font-family: novamono, monospace;
+  font-size: 30px;
+}
+
+.menuButton {
+  display: none;
+  background-color: #32999f;
+  width: 30px;
+  font-size: 30px;
+
+  height: 700px;
+  align-content: center;
+  border: 2px solid white;
+}
+
+@media (max-width: 800px) {
+  .Title {
+    margin: 10px 20px;
+    font-size: 40px;
+  }
+  .foodPictureSquare {
+    margin: 5px;
+    width: auto;
+  }
+  .foodName {
+    font-size: 40px;
+  }
+  .recomended {
+    font-size: 40px;
+    margin: 10px 2px;
+  }
+  .foodSquare {
+    margin: 30px 2px;
+    height: auto;
+  }
+  .LeftBarDiv {
+    height: auto;
+    display: none;
+  }
+  .mainSite,
+  .content {
+    height: auto;
+    width: auto;
+  }
+
+  .menuButton {
+    display: inline;
+  }
+}
